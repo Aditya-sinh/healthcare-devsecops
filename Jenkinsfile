@@ -43,7 +43,7 @@ pipeline {
                     --output trivy-report.txt \
                     ${IMAGE_NAME}:${IMAGE_TAG}
 
-                    trivy image --severity HIGH,CRITICAL \
+                    trivy image --severity HIGH,CRITICAL --exit-code 1 \
                     ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
