@@ -1,0 +1,14 @@
+
+{
+  "name": "healthcare-devsecops",
+  "version": "1.0.0",
+  "description": "Secure healthcare patient records API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}
